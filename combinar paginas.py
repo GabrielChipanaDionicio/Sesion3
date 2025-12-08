@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 1. IMPORTANTE: La configuración de página debe ser SIEMPRE lo primero, fuera de las funciones.
-st.set_page_config(page_title="Sesion 2 | ISIL", layout="centered")
+#st.set_page_config(page_title="Sesion 2 | ISIL", layout="centered")
 ############################# Pagina 1 ############################## 
 def page1(): 
     # Todo el contenido de la función debe estar indentado (con sangría)
