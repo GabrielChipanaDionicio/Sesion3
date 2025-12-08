@@ -2,11 +2,6 @@ import streamlit as st
 
 # 1. IMPORTANTE: La configuración de página debe ser SIEMPRE lo primero, fuera de las funciones.
 st.set_page_config(page_title="Sesion 2 | ISIL", layout="centered")
-
-##############
-# st.sidebar.image("imagenes/logo_isil_principal.jpg", caption="Actividad #1 | Contenido del Curso")
-##############
-
 ############################# Pagina 1 ############################## 
 def page1(): 
     # Todo el contenido de la función debe estar indentado (con sangría)
