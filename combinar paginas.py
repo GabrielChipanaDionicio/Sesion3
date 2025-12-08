@@ -18,7 +18,7 @@ def page1():
     st.markdown("---")
     
     # --- URLs y Definición de Hitos ---
-    base_url = "https://raw.githubusercontent.com/GabrielChipanaDionicio/timeline_s1/main/timeline_images/"
+    base_url = "https://raw.githubusercontent.com/GabrielChipanaDionicio/SESION-1-Y-2/main/timeline_images/"
     
     hitos = {
         1: {
