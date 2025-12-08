@@ -4,19 +4,18 @@ import streamlit as st
 #st.sidebar.image("imagenes/logo_isil_principal.jpg", caption="Actividad #1 | Contenido del Curso")
 #############################Pagina 1############################## 
 def page1(): 
-  st.set_page_config(page_title="Detección de Fraude | ISIL", layout="wide") 
-  
-  st.title("Detección de Transacciones Fraudulentas | Línea de Tiempo de Hitos Clave")
+st.set_page_config(page_title="Sesion 2 | ISIL", layout="centered")
+st.title("Desarrollo de la IA | Timeline")
   st.markdown("---")
   # Autor actualizado según la solicitud del usuario
-  st.write("Autor: GRUPO 1 | ISIL") 
-  st.write("Explora los 5 eventos tecnológicos que transformaron la lucha contra el fraude bancario, desde la modelización estadística hasta la inteligencia artificial en tiempo real.")
+st.write("Autor: Gabriel Chipana | ISIL")
+st.write("Interactúa con la barra deslizante para explorar los hitos más importantes en la historia de la IA.")
   st.markdown("---")
   
   # --- URLs y Definición de Hitos con Información Ampliada ---
   
   # Se usa la URL de GitHub proporcionada por el usuario
-  base_url = "https://raw.githubusercontent.com/adrianticonatapia-debug/timeline_s1/main/timeline_images/"
+ base_url = "https://raw.githubusercontent.com/GabrielChipanaDionicio/timeline_s1/main/timeline_images/"
   
   hitos = {
       1: {
@@ -102,76 +101,30 @@ def page1():
 
 ############################# Pagina 2 ############################## 
 def page2():
-  st.set_page_config(page_title="Sesión 2 | ISIL", layout="centered")
-  
-  st.title("Segmentación de Clientes por Comportamiento Digital | Timeline")
-  st.write("Autor: Christian Torres | ISIL")
-  st.write(
-      "Explora cómo ha evolucionado la segmentación y el análisis del comportamiento digital "
-      "en marketing, data science y comercio electrónico."
-  )
-  
-  # URLs de imágenes en GitHub (modifícalas según tus archivos)
-  
-  
-  base_url = "https://raw.githubusercontent.com/christlv/Avance01-Grupo-2/main/timeline_segmentacion/"
-  
-  
-  imagenes = {
-     1: base_url + "segmentacion1.png",
-     2: base_url + "segmentacion2.jpg",
-     3: base_url + "segmentacion3.jpg",
-     4: base_url + "segmentacion4.jpg",
-     5: base_url + "segmentacion5.jpg"
-  }
-  
-  # Slider
-  opcion = st.slider(
-      "Selecciona un punto del timeline",
-      min_value=1,
-      max_value=5,
-      value=1,
-      step=1
-  )
-  
-  # Mostrar imagen según slider
-  st.image(imagenes[opcion], use_container_width=True)
-  
-  # Información del timeline
-  if opcion == 1:
-      st.info(
-          "**2000 – Inicio del análisis web (Web Analytics 1.0)** | "
-          "Comienza el uso de métricas básicas como visitas, páginas vistas y tasa de rebote. "
-          "Se sientan las bases del análisis de comportamiento digital."
-      )
-  
-  if opcion == 2:
-      st.info(
-          "**2008 – Evolución hacia Web Analytics 2.0** | "
-          "Aparecen métricas orientadas al usuario, segmentación por fuentes, embudos de conversión "
-          "y análisis del customer journey."
-      )
-  
-  if opcion == 3:
-      st.info(
-          "**2015 – Segmentación basada en Machine Learning** | "
-          "Se masifica el uso de clustering (K-means, DBSCAN) para segmentar usuarios por comportamiento "
-          "como frecuencia, valor, navegación o intención de compra."
-      )
-  
-  if opcion == 4:
-      st.info(
-          "**2018 – Personalización en tiempo real** | "
-          "Plataformas de e-commerce y marketing digital comienzan a personalizar contenido dinámicamente "
-          "según el comportamiento histórico y actual del usuario."
-      )
-  
-  if opcion == 5:
-      st.info(
-          "**2023 – Segmentación avanzada con IA generativa y big data** | "
-          "La IA puede analizar interacciones a gran escala, generar perfiles de clientes, predecir comportamientos "
-          "y optimizar campañas automáticamente."
-      )
+  st.title("Resolver ecuaciones de primer grado")
+
+st.write("Vamos a resolver una ecuación del tipo **ax + b = c**")
+
+# Definir coeficientes (puedes cambiarlos o hacerlos aleatorios)
+a = 3
+b = 5
+c = 20
+
+st.latex(f"{a}x + {b} = {c}")
+
+# Resultado correcto
+resultado_correcto = (c - b) / a
+
+# Input del usuario
+respuesta = st.number_input("Ingresa el valor de x:", step=0.1)
+
+# Botón para verificar
+if st.button("Verificar resultado"):
+    if abs(respuesta - resultado_correcto) < 1e-6:
+        st.success("¡Correcto! 🎉")
+        st.balloons()
+    else:
+        st.error("Resultado incorrecto. Intenta nuevamente.")
 ############################# Pagina 3 ############################## 
 def page3():
   st.title("Pendiente")
