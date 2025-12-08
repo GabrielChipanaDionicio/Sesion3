@@ -143,6 +143,3 @@ page_names_to_funcs = {
 
 selected_page = st.sidebar.selectbox("Selecciona", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
-selected_page = st.sidebar.selectbox("Selecciona", page_names_to_funcs.keys())
-page_names_to_funcs[selected_page]()
-  
