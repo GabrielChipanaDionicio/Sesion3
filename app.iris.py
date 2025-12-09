@@ -1,5 +1,5 @@
 import streamlit as st
-import joblib as joblib
+import joblib
 
 ############################# Barra Lateral##############################    
 
