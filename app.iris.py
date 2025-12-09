@@ -3,7 +3,7 @@ import joblib
 
 ############################# Barra Lateral##############################    
 
-st.sidebar.image("imagenes/logo_isil_principal.jpg", caption="Aplicación de Modelo de Clasificación | Despliegue en Streamlit")
+#st.sidebar.image("imagenes/logo_isil_principal.jpg", caption="Aplicación de Modelo de Clasificación | Despliegue en Streamlit")
 
 #############################Pagina 1##############################    
 
